@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crefaz | Mesa Arena Churrasco Crefaz Expoingá 2026</title>
+
+    <link rel="shortcut icon" href="assets/favicon-crefaz.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- hero -->
+    <section id="hero">
+        <!-- Global styles -->
+        <style>
+            html {
+                --azul-escuro: #0d2041;
+                --azul-crefaz: #163056;
+                --laranja-crefaz: #ef6b22;
+            }
+
+            @font-face {
+                font-family: 'Anteb';
+                src: url('https://site.crefaz.com.br/parcerias/fonts/Anteb-Regular.otf') format('opentype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'Anteb';
+                src: url('https://site.crefaz.com.br/parcerias/fonts/Anteb-ExtraBold.otf') format('opentype');
+                font-weight: bold;
+                font-style: normal;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                scroll-behavior: smooth;
+                font-family: 'Anteb', sans-serif;
+                overflow-x: hidden;
+            }
+
+
+            .input-success {
+                border: 2px solid #22c55e !important;
+            }
+
+            .input-error {
+                border: 2px solid #ef4444 !important;
+            }
+
+            .error-label {
+                color: #ef4444;
+                font-size: 11px;
+                margin-top: 4px;
+                font-weight: 600;
+                display: none;
+            }
+
+            ::selection {
+                background: #4dbeffbb;
+                color: #ffffff;
+            }
+
+            strong {
+                font-weight: 800;
+            }
+
+            .btn {
+                border: none;
+                border-radius: 10px;
+                padding: 10px;
+                cursor: pointer;
+                font-size: 28px;
+                font-family: 'Anteb', sans-serif;
+                height: 80px;
+                align-content: center;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            .btn-primary {
+                background: #163056;
+                color: #fff;
+                width: 100%;
+            }
+
+            .btn-primary-outline {
+                background: transparent;
+                border: 2px solid #163056;
+                color: #163056;
+                text-decoration: none;
+                width: 100%;
+                text-align: center;
+            }
+
+            .btn-secondary {
+                background: #EF6B22;
+                color: #fff;
+                width: 100%;
+            }
+
+            .btn-secondary-outline {
+                background: transparent;
+                border: 2px solid #EF6B22;
+                color: #EF6B22;
+                text-decoration: none;
+                width: 100%;
+                text-align: center;
+                transition: all 0.1s ease;
+                align-items: center;
+                display: flex;
+            }
+
+            .btn-secondary-outline:hover {
+                background: #ef6b22;
+                color: #fff;
+            }
+
+            .btn-primary:hover {
+                filter: brightness(1.2);
+            }
+
+            .btn-secondary:hover {
+                filter: brightness(0.9);
+            }
+        </style>
+        <style>
+            #hero {
+                font-family: 'Anteb', sans-serif;
+                background: #163056;
+                display: grid;
+                align-items: center;
+                grid-template-columns: 1fr;
+                justify-content: center;
+                min-height: 600px;
+            }
+
+            h1 {
+                font-size: 70px;
+                margin: 0;
+                padding: 0;
+                font-weight: 600;
+                text-align: left;
+                line-height: 1.1;
+                letter-spacing: -1px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+
+            h2 {
+                font-size: 85px;
+                margin: 0;
+                padding: 0;
+                font-weight: 400;
+                text-align: left;
+                line-height: 1.1;
+                letter-spacing: -1px;
+                color: #fff;
+            }
+
+            .credit-content {
+                background: #ef6b22;
+            }
+
+            .logo-crefaz {
+                width: 250px;
+                margin: 0 auto;
+                fill: #fff;
+                display: none;
+            }
+
+            .card-text {
+                display: grid;
+                gap: 20px;
+                max-width: 500px;
+            }
+
+            .menu-content,
+            .credit-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 60px 30px;
+                height: 100%;
+            }
+
+            .credit-content {
+                gap: 40px;
+            }
+
+            .menu-content {
+                background: #432918;
+                gap: 40px;
+            }
+
+            .logo-arena {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            .btn-confirmation {
+                background: transparent;
+                color: #ffffff;
+                border: 2px solid;
+                text-align: center;
+                text-decoration: none;
+                min-width: 350px;
+                margin: 0 auto;
+            }
+
+
+            .btn-confirmation:hover {
+                background: transparent;
+                color: #fff;
+                border: 2px solid;
+                fill: #fff;
+            }
+
+            .content-image {
+                background: var(--laranja-crefaz);
+                position: relative;
+                display: grid;
+                grid-template-columns: 0.6fr 1fr;
+                align-items: center;
+                padding: 10px 30px;
+                justify-content: center;
+                background: #163056;
+                border-radius: 30px;
+                height: 280px;
+                max-width: 800px;
+            }
+
+            .content-image .container {
+                display: grid;
+                grid-template-columns: 0.9fr 1fr;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                gap: 20px;
+                padding: 60px 30px;
+            }
+
+            .content-text {
+                color: #fff;
+                padding: 30px 0;
+            }
+
+            .content-text p {
+                margin: 0;
+                padding: 0;
+            }
+
+            .iphone {
+                pointer-events: none;
+                position: absolute;
+                max-width: 250px;
+                top: -50px;
+                left: 20px;
+            }
+
+            .iphone img {
+                width: 100%;
+            }
+
+            @media (max-width: 767px) {
+
+                h1 {
+                    font-size: 28px;
+                    line-height: 1.1;
+                    text-align: left;
+                }
+
+                h2 {
+                    font-size: 28px;
+                }
+
+                .logo-crefaz {
+                    width: 200px;
+                    display: none;
+                }
+
+                .logo-arena {
+                    max-width: 250px;
+                }
+
+                .card-text {
+                    display: grid;
+                    gap: 20px;
+                }
+
+                .btn-confirmation {
+                    min-width: 320px;
+                    height: 70px;
+                }
+
+                .content-image {
+                    width: 100%;
+                    grid-template-columns: 0.7fr 1fr;
+                    height: fit-content;
+                    margin: 20px 0;
+                    padding: 0;
+                }
+
+                .iphone {
+                    max-width: 130px;
+                    left: 0;
+                    top: -30px;
+                }
+
+                .content-image .container {
+                    grid-template-columns: 1fr;
+                    gap: 0;
+                }
+            }
+        </style>
+
+        <div class="menu-content">
+
+            <!-- <img class="logo-arena" src="assets/logo-crefaz-arena.png" alt="Logo Complexo Arena Crefaz"
+                title="Logo Complexo Arena Crefaz"> -->
+
+            <img class="logo-arena"
+                src="https://image.parceiros.crefaz.com.br/lib/fe3711737164057b751772/m/1/d080ab8c-68af-4270-9584-da2987140841.png"
+                alt="Logo Complexo Arena Crefaz" title="Logo Complexo Arena Crefaz">
+
+            <!-- <h2><strong>Aproveite o melhor sabor da Expoingá 2026 aqui na Crefaz Arena Churrasco!</strong></h2> -->
+            <a href="#" class="btn btn-confirmation">
+                Ver cardápio
+            </a>
+        </div>
+
+        <div class="credit-content">
+            <div class="content-image">
+                <div class="content-iphone">
+                    <div class="iphone">
+                        <!-- <img src="assets/iphone-17-dois-celulares-celular.png" alt="iPhone 17" class="iPhone 17"> -->
+                        <img src="https://image.parceiros.crefaz.com.br/lib/fe3711737164057b751772/m/1/677ffe06-c94d-4519-9ae3-bc33dc1e1049.png"
+                            alt="iPhone 17" class="iPhone 17">
+                    </div>
+
+                </div>
+                <div class="content-text">
+                    <h1>Quer ganhar <br>um iPhone 17?</h1>
+                </div>
+            </div>
+            <a href="https://site.crefaz.com.br/expoinga" class="btn btn-confirmation">
+                Clique e participe
+            </a>
+        </div>
+
+    </section>
+
+    <!-- rodapé -->
+    <section id="rodape">
+        <style>
+            #rodape {
+                font-family: 'Anteb', sans-serif;
+                /* background: #0d2041; */
+                background: #163056;
+                color: #fff;
+            }
+
+            .footer-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 40px 0px;
+            }
+
+            .logo-footer {
+                width: 130px;
+                fill: #fff;
+            }
+
+            .footer-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 20px;
+            }
+
+            .footer-title {
+                font-size: 16px;
+                font-weight: 400;
+                color: #778fb3;
+            }
+
+            .footer-text {
+                font-size: 14px;
+                color: #ffffff;
+                line-height: 1.5;
+            }
+
+            .social-icons {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                justify-content: end;
+            }
+
+            .security-icons {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .security-icons img {
+                width: 110px;
+            }
+
+            .security-imgs {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .icon-social {
+                background: #163056;
+                width: 38px;
+                fill: #ffffff;
+                border-radius: 10px;
+                padding: 6px;
+                transition: all 0.2s ease;
+            }
+
+            .icon-social:hover {
+                fill: #fff;
+                background: #27436d;
+                transform: translatey(-1px);
+            }
+
+            .privacity {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                justify-content: end;
+            }
+
+            .footer-container a {
+                font-size: 14px;
+                color: #778fb3;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+
+            .footer-section a {
+                font-size: 18px;
+            }
+
+            .footer-section a:hover,
+            .footer-container a:hover {
+                color: #fff;
+                text-decoration: underline;
+            }
+
+            #msg-footer {
+                color: #778fb3;
+                padding: 18px;
+                text-align: center;
+                border-top: 1px solid #657a992e;
+                line-height: 1.5;
+            }
+
+            #msg-footer p {
+                margin: 0;
+                padding: 0;
+                font-family: 'Anteb', sans-serif;
+                font-size: 12px;
+            }
+
+            @media (max-width: 768px) {
+                .footer-container {
+                    grid-template-columns: 1fr;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .logo-footer {
+                    padding: 0;
+                }
+
+                .social-icons {
+                    justify-content: center;
+                }
+
+                .footer-section {
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .privacity {
+                    flex-direction: column;
+                    gap: 8px;
+                }
+
+                .security-icons {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+
+                #msg-footer p {
+                    font-size: 10px;
+                }
+            }
+        </style>
+
+        <div class="footer-container">
+            <div class="footer-section">
+                <svg class="logo-footer" id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 150 28.41">
+                    <path
+                        d="M148.79,1.54c-2.56-.72-5.23-1.18-7.98-1.35-.77-.05-1.55-.07-2.33-.07s-1.56.02-2.33.07c-3.17.19-6.23.77-9.14,1.7v5.72c.89-.34,1.8-.63,2.73-.89,2.44-.68,4.99-1.08,7.62-1.17.19-.02.38-.04.58-.05.18-.01.37-.02.56-.02s.37,0,.56.02c.19.01.38.03.57.05,1.42.05,2.82.19,4.19.41l-.85.75-12.41,11-2.17,1.92-1.37,1.21h0v5.72c.43.14.86.27,1.3.39,2.99.83,6.12,1.31,9.36,1.37h1.63c3.72-.08,7.31-.69,10.7-1.77v-5.72c-.95.36-1.92.68-2.92.95-2.41.66-4.93,1.05-7.53,1.13-.35.01-.71.02-1.07.02s-.72,0-1.07-.02c-1.39-.04-2.76-.18-4.1-.39l.89-.79,12.3-10.91,2.18-1.94,1.31-1.16V1.9c-.4-.13-.8-.25-1.21-.36Z" />
+                    <path
+                        d="M121.36,5.49c-.24-.31-.5-.61-.76-.89-.52-.56-1.09-1.08-1.69-1.55-2.4-1.86-5.41-2.97-8.69-2.97-.92,0-1.81.09-2.68.26-1.83.35-3.52,1.05-5.03,2.02-1.31.85-2.47,1.91-3.43,3.14-.09.11-.18.22-.26.34-.59.8-1.1,1.66-1.51,2.57-.8,1.76-1.24,3.71-1.25,5.76,0,.03,0,.05,0,.08,0,2.05.43,3.99,1.21,5.75.41.92.91,1.78,1.5,2.59,1.02,1.4,2.29,2.6,3.74,3.55,1.5.98,3.2,1.68,5.03,2.03.4.08.8.14,1.22.18.48.05.98.08,1.47.08s.99-.03,1.47-.08c2.7-.28,5.18-1.32,7.21-2.9v2.9h5.43v-15.23c-.11-1.36-.41-2.67-.88-3.9-.51-1.35-1.22-2.6-2.1-3.71ZM115.87,20.85c-1.52,1.3-3.49,2.08-5.65,2.08-.17,0-.34,0-.5-.02-1.92-.11-3.67-.84-5.05-1.99-1.91-1.59-3.13-4-3.13-6.68,0-.03,0-.05,0-.08.02-2.66,1.24-5.03,3.14-6.61,1.39-1.15,3.14-1.88,5.06-1.99.16,0,.33-.01.49-.01,2.15,0,4.12.78,5.63,2.07,1.39,1.18,2.4,2.8,2.83,4.64.13.54.2,1.1.22,1.67,0,.1,0,.21,0,.31s0,.21,0,.31c-.02.57-.09,1.12-.22,1.65-.43,1.84-1.44,3.46-2.82,4.64Z" />
+                    <path
+                        d="M97.41,4.18c-2.08-2.09-4.8-3.53-7.85-4.01-.3-.05-.61-.09-.92-.11-.42-.04-.85-.06-1.28-.06s-.86.02-1.28.06c-1.72.15-3.35.61-4.84,1.33-2,.96-3.74,2.37-5.08,4.11-.12.16-.24.31-.35.47v6.86h0v15.51h5.43v-7.99h0v-2.07h8.32v-5.43h-8.32v-4.84c1.45-1.43,3.4-2.37,5.56-2.5.18-.01.37-.02.56-.02s.37,0,.56.02c.56.03,1.11.13,1.64.26,1.53.4,2.9,1.2,3.98,2.29l1.98-1.98.58-.58,1.31-1.31Z" />
+                    <path
+                        d="M73.63,10.69c-.13-.52-.29-1.02-.48-1.51-.5-1.33-1.2-2.57-2.06-3.68-2.35-3.03-5.89-5.08-9.92-5.43-.42-.04-.85-.06-1.28-.06s-.86.02-1.28.06c-4.03.36-7.58,2.41-9.92,5.43-.08.1-.16.2-.23.31-.59.8-1.09,1.67-1.5,2.58-.63,1.41-1.04,2.94-1.18,4.54-.04.41-.05.82-.05,1.24,0,1.44.22,2.83.62,4.14.17.56.38,1.11.61,1.64.41.92.91,1.78,1.5,2.58,2.58,3.52,6.74,5.8,11.43,5.8,2.16,0,4.21-.48,6.04-1.35l-.84-2.57-.89-2.7c-1.27.73-2.74,1.14-4.31,1.14-3.31,0-6.18-1.85-7.65-4.57-.66-1.23-1.04-2.63-1.04-4.12,0-.43.03-.85.09-1.26.58-4.02,3.92-7.16,8.04-7.42.18-.01.37-.02.56-.02s.37,0,.56.02c4.1.26,7.43,3.36,8.03,7.36l-9.06.03,1.74,5.38,6.4-.02h3.07s2.51-.02,2.51-.02h.32c.06-.19.11-.38.16-.58.28-1.11.43-2.28.43-3.48,0-.45-.02-.9-.06-1.33-.07-.73-.19-1.45-.37-2.14Z" />
+                    <path
+                        d="M47.07,4.18C44.79,1.88,41.72.36,38.31.06c-.42-.04-.85-.06-1.28-.06s-.86.02-1.28.06c-1.72.15-3.35.61-4.84,1.33-2,.96-3.74,2.37-5.08,4.11-.08.1-.16.2-.23.31-.04.05-.08.11-.12.16v22.36h5.43v-7.99h0V7.99c1.45-1.43,3.4-2.37,5.56-2.5.18-.01.37-.02.56-.02s.37,0,.56.02c2.19.14,4.16,1.09,5.61,2.56l1.98-1.98.58-.58,1.31-1.31Z" />
+                    <path
+                        d="M20.35,20.27c-1.58,1.6-3.77,2.59-6.19,2.59s-4.55-.96-6.12-2.52c-1.59-1.57-2.57-3.76-2.57-6.17s.99-4.61,2.59-6.19c1.44-1.43,3.39-2.35,5.55-2.48.18-.01.37-.02.56-.02s.37,0,.56.02c2.19.14,4.16,1.09,5.61,2.56l1.98-1.98.58-.58,1.31-1.31C21.93,1.88,18.86.36,15.44.06c-.42-.04-.85-.06-1.28-.06s-.86.02-1.28.06c-3.38.3-6.42,1.79-8.7,4.05-.44.43-.85.9-1.23,1.39C1.11,7.89,0,10.9,0,14.17c0,3.93,1.6,7.48,4.18,10.04,2.56,2.55,6.09,4.12,9.99,4.12s7.49-1.6,10.06-4.19l-1.89-1.89-1.98-1.98Z" />
+                </svg>
+                <a href="https://site.crefaz.com.br/" title="Site Crefaz " alt="Site Crefaz" target="_blank">
+                    crefaz.com.br
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/crefazoficial/" title="Facebook" alt="Facebook" target="_blank">
+                    <svg class="icon-social" id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 48 47.82">
+                        <path
+                            d="M24,0C10.75,0,0,10.75,0,24c0,11.26,7.75,20.7,18.2,23.29v-15.96h-4.95v-7.33h4.95v-3.16c0-8.17,3.7-11.95,11.72-11.95,1.52,0,4.14.3,5.22.6v6.65c-.57-.06-1.55-.09-2.77-.09-3.94,0-5.46,1.49-5.46,5.37v2.59h7.84l-1.35,7.33h-6.49v16.49c11.88-1.44,21.09-11.55,21.09-23.82,0-13.25-10.75-24-24-24Z" />
+                    </svg>
+
+                </a>
+                <a href="https://www.instagram.com/crefazoficial/" title="Instagram" alt="Instagram" target="_blank">
+                    <svg class="icon-social" id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 47.97 47.99">
+                        <path
+                            d="M47.83,14.12c-.11-2.55-.52-4.3-1.11-5.82-.59-1.59-1.41-2.93-2.75-4.27-1.33-1.33-2.67-2.16-4.25-2.77-1.53-.59-3.27-1-5.82-1.12-2.57-.12-3.38-.15-9.9-.15s-7.33.03-9.89.14c-2.55.11-4.3.52-5.82,1.12-1.58.62-2.93,1.43-4.26,2.78-1.34,1.33-2.16,2.67-2.77,4.25-.59,1.53-1,3.27-1.11,5.82-.11,2.57-.14,3.38-.14,9.9s.03,7.33.14,9.89c.11,2.55.52,4.3,1.11,5.82.62,1.58,1.44,2.93,2.77,4.26,1.33,1.33,2.67,2.16,4.25,2.77,1.53.59,3.27,1,5.82,1.12,2.56.11,3.38.14,9.89.14s7.33-.03,9.89-.14c2.55-.11,4.3-.52,5.82-1.12,1.57-.61,2.92-1.43,4.25-2.77,1.33-1.33,2.16-2.67,2.77-4.25.59-1.53,1-3.27,1.11-5.82.11-2.56.14-3.38.14-9.89s-.03-7.33-.14-9.89ZM43.52,33.67c-.1,2.34-.5,3.61-.82,4.45-.43,1.12-.96,1.92-1.79,2.76-.84.84-1.64,1.36-2.76,1.79-.84.33-2.12.72-4.45.83-2.53.11-3.29.14-9.69.14s-7.17-.03-9.69-.14c-2.34-.1-3.61-.5-4.45-.83-1.11-.43-1.92-.96-2.76-1.79-.84-.84-1.36-1.64-1.79-2.76-.33-.84-.72-2.12-.83-4.45-.11-2.53-.14-3.29-.14-9.69s.03-7.17.14-9.69c.1-2.34.5-3.61.83-4.45.43-1.12.96-1.92,1.79-2.76.84-.84,1.64-1.36,2.76-1.79.84-.33,2.12-.72,4.45-.83,2.52-.11,3.28-.14,9.69-.14s7.17.03,9.69.14c2.34.1,3.61.5,4.45.83,1.12.43,1.92.96,2.76,1.79.84.84,1.36,1.64,1.79,2.76.33.84.72,2.12.82,4.45.11,2.53.14,3.29.14,9.69s-.03,7.17-.14,9.69Z" />
+                        <path
+                            d="M24,11.67c-6.81,0-12.33,5.52-12.33,12.33s5.52,12.33,12.33,12.33,12.33-5.52,12.33-12.33-5.52-12.33-12.33-12.33ZM24,32c-4.42,0-8-3.58-8-8s3.58-8,8-8,8,3.58,8,8-3.58,8-8,8Z" />
+                        <path
+                            d="M36.82,8.31c-1.59,0-2.88,1.28-2.88,2.88s1.28,2.88,2.88,2.88,2.88-1.28,2.88-2.88-1.29-2.88-2.88-2.88Z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/company/crefazoficial/posts/?feedView=all" title="LinkedIn"
+                    alt="LinkedIn" target="_blank">
+                    <svg class="icon-social" id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 47.89 47.9">
+                        <path
+                            d="M35.16,0H12.76C5.79.17.17,5.78,0,12.75v22.4c.18,7.07,5.97,12.75,13.09,12.75h21.73c7,0,12.72-5.5,13.07-12.42V12.41c-.34-6.81-5.88-12.24-12.73-12.41ZM14.21,40.82h-7.11v-22.86h7.11v22.86ZM10.65,14.84c-2.28,0-4.12-1.84-4.12-4.12s1.84-4.11,4.12-4.11,4.12,1.84,4.12,4.11-1.85,4.12-4.12,4.12ZM40.81,40.82h-7.1v-11.12c0-2.64-.05-6.06-3.69-6.06s-4.26,2.89-4.26,5.88v11.3h-7.09v-22.86h6.81v3.12h.09c.95-1.8,3.27-3.7,6.72-3.7,7.19,0,8.52,4.74,8.52,10.89v12.55Z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="security-icons">
+                <div class="footer-title">Autorizado</div>
+                <div class="security-imgs">
+                    <img src="https://image.parceiros.crefaz.com.br/lib/fe3711737164057b751772/m/1/f56a9041-98d8-42be-ad63-1fd0fa08d88f.png"
+                        alt="Banco Central do Brasil">
+                    <img src="https://image.parceiros.crefaz.com.br/lib/fe3711737164057b751772/m/1/d32ada86-18ed-4f45-88e9-ea85e6a51267.png"
+                        alt="Site Seguro">
+                </div>
+            </div>
+            <div class="privacity">
+                <a href="https://site.crefaz.com.br/politica-de-privacidade">Política de Privacidade</a>
+
+                <a href="https://site.crefaz.com.br/seguranca-cibernetica">Política de Segurança Cibernética</a>
+            </div>
+        </div>
+        <!-- Mensagem de rodapé -->
+        <div id="msg-footer">
+            <p>CREFAZ SOCIEDADE DE CREDITO AO MICROEMPREENDEDOR E A EPP LTDA. | 18.188.384/0001-83
+                <br>Avenida Duque de Caxias, 882 - 87020-025 - Maringá/PR
+            </p>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
